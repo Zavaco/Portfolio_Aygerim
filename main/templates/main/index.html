@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% load menu_tags %}
+{% get_menus as menu %}
+{% get_footer as footer %}
+{% block content %}
+<div class="box-1">
+    {% for el in home_pg %}
+                    <h1>{{ el.home_title }}</h1>
+                    <img id="p_0" src="{{ el.home_image.url }}" alt="q">
+                    <div class="numbers">
+                        <p>12 <br> l <br> 19</p>
+                    </div>
+                </div>
+{% endfor %}
+{% endblock %}
+
+{% block footer %}
+
+{% include 'main/footer.html' %}
+
+{% endblock %}

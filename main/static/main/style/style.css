@@ -1,0 +1,304 @@
+body {
+  width: 1440px;
+  height: 1024px;
+  min-width: 1310px;
+}
+
+body a:hover, body a:focus {
+  color: #7b7b7b;
+}
+
+.page-1 .header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 30px;
+}
+
+.page-1 .header .left {
+  width: 50%;
+}
+
+.page-1 .header .left .logo {
+  margin-top: 25px;
+}
+
+.page-1 .header .right {
+  width: 50%;
+}
+
+.page-1 .header .right .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  float: right;
+}
+
+.page-1 .header .right .menu ul li {
+  margin-right: 110px;
+}
+
+.page-1 .header .right .menu ul li a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.page-1 .header .right .menu ul li:last-child {
+  margin-right: 0%;
+}
+
+.page-1 .box-1 {
+  margin: auto;
+}
+
+.page-1 .box-1 h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-left: 64px;
+}
+
+.page-1 .box-1 .numbers {
+  float: left;
+  margin-top: 471px;
+  margin-right: 20px;
+}
+
+.page-1 .box-1 .numbers p {
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 47px;
+  color: #FFFFFF;
+}
+
+.page-1 .footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.page-1 .footer .left {
+  margin-right: auto;
+}
+
+.page-1 .footer .left h1 {
+  text-transform: uppercase;
+  font-family: Francois One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.page-1 .footer .left .social #i1 {
+  margin-right: 14px;
+}
+
+.page-1 .footer .right {
+  margin-left: auto;
+}
+
+.page-1 .footer .right h1 {
+  margin-top: 47px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.pictures {
+  margin-top: 90px;
+}
+
+.pictures .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 52px;
+}
+
+.pictures .list-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 98px;
+}
+
+.content {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 184px;
+  padding-left: 127px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .picture {
+  margin-top: 50px;
+}
+
+.content .text {
+  margin-left: auto;
+}
+
+.content .text p {
+  font-family: Elephant;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.footer_last {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer_last .left {
+  margin-right: 37px;
+}
+
+.footer_last .left h1 {
+  text-transform: uppercase;
+  font-family: Francois One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.footer_last .left .social #i1 {
+  margin-right: 14px;
+}
+
+.footer_last .mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+}
+
+.footer_last .mid h1 {
+  font-family: Elephant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #C7B2AA;
+  padding-top: 18px;
+  margin-left: 15px;
+}
+
+.footer_last .right {
+  margin-left: auto;
+}
+
+.footer_last .right h1 {
+  margin-top: 47px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .page-1 .header .left {
+    margin-left: 50px;
+    width: 14%;
+  }
+  .page-1 .header .right {
+    width: 15%;
+  }
+  .page-1 .box-1 {
+    margin: 0%;
+  }
+  .page-1 .box-1 .numbers {
+    display: contents;
+  }
+  .page-1 .footer .left {
+    margin-right: 318px;
+  }
+  .page-1 .footer .right {
+    margin: 0%;
+  }
+  .content {
+    display: block;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 24px;
+  }
+  .pictures {
+    margin-top: 19px;
+    margin-left: 30px;
+  }
+  .pictures .list {
+    display: -ms-grid;
+    display: grid;
+  }
+  .pictures .list-2 {
+    display: -ms-grid;
+    display: grid;
+  }
+  .content .text p {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .pictures .list {
+    display: -ms-grid;
+    display: grid;
+  }
+  .row {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

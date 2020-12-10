@@ -1,0 +1,38 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    #about_title{
+    margin-left:108px;
+    }
+</style>
+ <div class="content">
+                    <div class="picture">
+                        {% for el in about_pg %}
+                        <img id="p3" src="{{ el.about_image.url }}" alt="aa">
+                    </div>
+                    <div class="text">
+                        <p id="about_title">{{ el.about_title }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="footer_last">
+                    <div class="left">
+                        {% for el in footer %}
+                        <h1>{{ el.footer_info }}</h1>
+                        <div class="social">
+                            <a href="{{ el.sm_ins }}"><img id="i1" src="{{ el.sm_ins_icon.url }}" alt="q"></a>
+                            <a href="{{ el.sm_mail }}"><img id="i2" src="{{ el.sm_mail_icon.url }}" alt="q"></a>
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <img id="p_4" src="{{ el.footer_except.url }}" alt="arrow">
+
+                        <h1>{{ el.footer_about_info }}</h1>
+                    </div>
+                    <div class="right">
+                        <h1>{{ el.footer_year }}</h1>
+                        {% endfor %}
+                    </div>
+                </div>
+{% endblock %}

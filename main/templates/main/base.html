@@ -1,0 +1,59 @@
+{% load static %}
+{% load menu_tags %}
+{% get_menus as menu %}
+{% get_footer as footer %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/style/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <title>Aygerim</title>
+</head>
+<body background="{% static 'main/img/background.png' %}">
+    <div class="page-1">
+
+        <div class="container">
+            <div class="row">
+                <div class="header">
+                    <div class="left">
+                        <div class="col-5">
+                            <div class="logo">
+                                {%  for el in menu%}
+                                {% if el.id == 1  %}
+                                <a href="{% url 'home' %}"><img src="{{ el.logo.url }}" alt="p"></a>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="col-12">
+                            <div class="menu">
+                                <ul>
+                                    {% for el in menu  %}
+                                    <li><a href="{{ el.to }}">{{ el.name }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% block content %}
+                {% endblock %}
+
+                {% block footer %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

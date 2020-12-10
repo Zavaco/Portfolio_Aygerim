@@ -1,0 +1,296 @@
+body{
+   background-image: url(img/background.png);
+   width: 1440px;
+   height: 1024px;
+   min-width: 1310px;
+   a:hover, a:focus {
+       color: #7b7b7b;
+   }
+
+}
+.container{
+   // max-width: 1310px;
+   // margin: 26px 67px 39px 67px;
+   //margin:  0 auto;
+}
+
+//index.html
+.page-1{
+    .header{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+        .left{
+            width: 50%;
+            .logo{
+                margin-top: 25px;
+                
+            }
+        }
+        .right{
+            width: 50%;
+            .menu{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    list-style-type: none;
+                    float: right;
+                    
+                    li{
+                        margin-right: 110px;
+                        a{
+                          text-decoration: none;
+                          font-family: Roboto;
+                          font-style: normal;
+                          font-weight: normal;
+                          font-size: 24px;
+                          line-height: 28px;
+      
+                          color: #000000;
+                        }
+                    }
+                    li:last-child{
+                        margin-right: 0%;
+                    }
+                }  
+              }
+        }
+
+    }
+    .box-1{
+        margin: auto;
+        h1{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 42px;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            margin-left: 64px;
+        }
+        .numbers{
+            float: left;
+            margin-top: 471px;
+            margin-right: 20px;
+            p{
+                text-align: center;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 32px;
+                line-height: 47px;
+
+                color: #FFFFFF;
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        .left{
+            margin-right: auto;
+            h1{
+                text-transform: uppercase;
+                font-family: Francois One;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 34px;
+                letter-spacing: 0.05em;
+                color: rgba(255, 255, 255, 0.92);
+            }
+            .social{
+                #i1{
+                    margin-right: 14px;
+                }
+                #i2{
+    
+                }
+            }
+            
+
+        }
+        .right{
+            margin-left: auto;
+            h1{
+                margin-top: 47px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 23px;
+                color: #000000;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+//about.html
+.pictures{
+    margin-top: 90px;
+    .list{
+        display: flex;
+        margin-bottom: 52px;
+    }
+    .list-2{
+        display: flex;
+        margin-bottom: 98px;
+    }
+}
+
+//work.html
+.content{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 184px;
+    padding-left: 127px;
+    display: flex;
+    .picture{
+        margin-top: 50px;
+        #p3{
+
+        }
+    }
+    .text{
+        margin-left: auto;
+        p{
+            font-family: Elephant;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 39px;
+            letter-spacing: 0.05em;
+            color: #000000;
+        }
+    }
+}
+.footer_last{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .left{
+        margin-right: 37px;
+        h1{
+            text-transform: uppercase;
+            font-family: Francois One;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 34px;
+            letter-spacing: 0.05em;
+            color: rgba(255, 255, 255, 0.92);
+        }
+        .social{
+            #i1{
+                margin-right: 14px;
+            }
+            #i2{
+
+            }
+        }
+    }
+    .mid{
+        display: flex;
+        margin-right: auto;
+        #p4{
+
+        }
+        h1{
+            font-family: Elephant;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.05em;
+            color: #C7B2AA;
+            padding-top: 18px;
+            margin-left: 15px;
+        }
+    }
+    .right{
+        margin-left: auto;
+        h1{
+            margin-top: 47px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+            color: #000000;
+            text-transform: uppercase;
+        }
+    }
+}
+// @media (max-width:1200px){
+//     .containerr{
+//         max-width: 970px;
+//     }
+// }
+// @media (max-width:992px){
+//     .containerr{
+//         max-width: 750px;
+//     }
+// }
+// @media (max-width:767px){
+//     .containerr{
+//         max-width: 500px;
+//     }
+// }
+@media screen and (max-width:768px){
+    .page-1 .header .left{
+        margin-left: 50px;
+        width: 14%;
+    }
+    .page-1 .header .right{
+        width: 15%;
+    }
+    .page-1 .box-1{
+        margin:0%;
+    }
+    .page-1 .box-1 .numbers{
+        display: contents;
+    }
+    .page-1 .footer .left{
+        margin-right: 318px;
+    }
+    .page-1 .footer .right{
+        margin: 0%;
+    }
+    .content{
+        display: block;
+        padding: 0;
+        margin-top: 0;
+        margin-left: 24px;
+    }
+    .pictures{
+        margin-top: 19px;
+        margin-left: 30px;
+    }
+    .pictures .list {
+        display: grid;
+    }
+    .pictures .list-2{
+        display: grid;
+    }
+    .content .text p{
+        font-size: 26px;
+    }
+    
+}
+@media screen and (max-width:960px){
+    .page-1 .header{
+        
+    }
+    .pictures .list{
+        display: grid;
+    }
+    .row{
+        display: block;
+    }
+
+}

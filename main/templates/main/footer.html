@@ -1,0 +1,18 @@
+{% load static %}
+{% load menu_tags %}
+{% get_menus as menu %}
+{% get_footer as footer %}
+<div class="footer">
+                    <div class="left">
+                        {% for el in footer  %}
+                        <h1>{{ el.footer_info }}</h1>
+                        <div class="social">
+                            <a href="{{ el.sm_ins }}"><img id="i1" src="{{ el.sm_ins_icon.url }}" alt="q"></a>
+                            <a href="{{ el.sm_mail }}"><img id="i2" src="{{ el.sm_mail_icon.url }}" alt="q"></a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1>{{ el.footer_year }}</h1>
+                    </div>
+                    {% endfor %}
+                </div>
